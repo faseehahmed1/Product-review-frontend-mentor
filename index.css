@@ -1,0 +1,133 @@
+:root{
+    --green: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+
+    --dark-blue: hsl(212, 21%, 14%);
+    --dark-gray: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+
+    --font-family-montserrat: 'Montserrat', sans-serif;
+    --font-family-fraunces: 'Fraunces', serif;
+
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    font: inherit;
+}
+
+
+body {
+    font-family: var(--font-family-montserrat);
+    background-color: var(--cream);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container{
+    background-color: var(--white);
+    width: 740px;
+    height: 550px;
+    border-radius: 10px;
+    display: flex;
+}
+
+.perfume-image{
+    height: 100%;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.title, .perfume-description, .original-price{
+    color: var(--dark-gray);
+}
+
+.title{
+    font-family: var(--font-family-montserrat);
+    font-weight: 500;
+    letter-spacing: 4px;
+    font-size: 14px;
+}
+
+.perfume-name{
+    color: var(--dark-blue);
+    font-family: var(--font-family-fraunces);
+    font-size: 38px;
+}
+
+.perfume-description{
+    font-size: 17px;
+    line-height: 30px;
+}
+
+.prices-container{
+    display: flex;
+    align-items: center;
+}
+
+.offer-price{
+    color: var(--green);
+    font-family: var(--font-family-fraunces);
+    font-size: 38px;
+    margin-right: 28px;
+}
+
+.original-price{
+    text-decoration: line-through;
+}
+
+button{
+    background-color: var(--green);
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    padding: 20px 60px;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-text{
+    color: var(--white);
+    margin-left: 12px;
+}
+
+button:hover {
+    background-color: hsl(158, 36%, 27%);
+    cursor: pointer;
+}
+.product-info-container{
+    padding: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 390px) {
+    body{
+        margin-top: 30px;
+        align-items: initial;
+    }
+    .main-container{
+        flex-direction: column;
+        width: 350px;
+        height: 750px;
+    }
+    .product-info-container{
+        padding: initial;
+        padding: 30px 30px;
+        /* border: 1px solid red; */
+        height: 100%;
+    }
+    .perfume-image{
+        width: 100%;
+        border-radius: 10px 10px 0px 0px;
+    }
+}
