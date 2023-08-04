@@ -111,9 +111,6 @@ button:hover {
 }
 
 @media screen and (max-width: 590px) {
-    body{
-        margin-top: 30px;
-    }
     .main-container{
         flex-direction: column;
         width: 350px;
