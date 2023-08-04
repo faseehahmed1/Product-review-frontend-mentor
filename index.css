@@ -110,10 +110,9 @@ button:hover {
     justify-content: space-between;
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 590px) {
     body{
         margin-top: 30px;
-        align-items: initial;
     }
     .main-container{
         flex-direction: column;
@@ -123,7 +122,6 @@ button:hover {
     .product-info-container{
         padding: initial;
         padding: 30px 30px;
-        /* border: 1px solid red; */
         height: 100%;
     }
     .perfume-image{
